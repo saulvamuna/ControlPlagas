@@ -225,13 +225,47 @@
 
 /*---- SOMOS ----*/
 .s_d1{
-  background: red;
-  width: 60%;
+  position: relative;
+  width: 70%;
   margin: auto;
+  padding: 20px;
+  margin-bottom: 50px;
 }
 .s-d1_titulo{
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  margin: 30px 0;
+  margin: 10px 0 40px 0;
+}
+.s-d1_contenido{
+  font-size: 20px;
+  margin: 20px 0 0 0;
+}
+
+.s_d2{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.s_d2 div{
+  width: 60%;
+}
+
+.d2_i1{
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-left: 40px;
+}
+.d2_i2{
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-right: 40px;
 }
