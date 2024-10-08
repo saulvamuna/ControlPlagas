@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
 }
-
+a{
+  text-decoration: none;
+}
 /*---- MENU ----*/
 .i_d1{
   display: flex;
@@ -14,6 +16,9 @@
   background: #000052;
   color: #fff;
   z-index: 999;
+}
+.dropdown{
+  display: none;
 }
 
 .i_d2 a{
@@ -41,7 +46,7 @@
 }
 .d3_d1{
   position: absolute;
-  top: 8vh;
+  top: 15vh;
   left: 30%;
   background: #fff;
   width: 40vw;
@@ -114,6 +119,7 @@
   font-size: 20px;
 }
 .d5_boton{
+  display: block;
   background: #000052;
   color: #fff;
   font-size: 20px;
@@ -152,11 +158,11 @@
 
 .d6_d1{
   position: absolute;
-  background: #000052;
+  background: #0f0fa3;
   width: 100%;
   height: 80vh;
   z-index: 2;
-  opacity: .5;
+  opacity: .7;
 }
 .d6_d2{
   position: absolute;
@@ -270,7 +276,7 @@
   margin-right: 40px;
 }
 
-
+/* servicios */
 .se_d1{
   background: #000057;
   display: flex;
@@ -284,12 +290,12 @@
   font-weight: 500;
 }
 .se_d1 div{
-  width: 50%;
+  width: 40%;
   text-align: justify;
 }
 
 .se_d1 img{
-  width: 20vw;
+  width: 25vw;
   height: 20vh;
   object-fit: cover;
   border-radius: 10px;
@@ -298,4 +304,136 @@
 
 .se_d1 .se-d1_i{
   margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .i_d2.opciones{
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown input[type="checkbox"] {
+    display: none;
+  }
+
+  .dropdown label {
+    padding: 5px 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .dropdown label:hover{
+    color: #000052;
+    background: #fff;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown input[type="checkbox"]:checked ~ .dropdown-content {
+    display: block;
+  }
+
+  .d3_d1{
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    background: #fff;
+    width: 90vw;
+    padding: 40px;
+    border-radius: 15px;
+    opacity: .8;
+  }
+
+  .i_d5{
+    display: block;
+    width: 90%;
+    margin: 80px auto;
+    padding: 20px;
+  }
+  .d5_d1{
+    width: 100%;
+  }
+
+  .d5_boton{
+    margin: 20px 0;
+  }
+  
+  .d5_d2 {
+    width: 100%;
+    margin: auto;
+  }
+  .d5_d2 img{
+    width: 100%;
+  }
+  .d5_i1{
+    margin-left: 0;
+  }
+  
+  .i_d6{
+    height: 160vh;
+  }
+
+  .d6_d1{
+    height: 160vh;
+  }
+
+  .d6_d2{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 3;
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .d6_d3{
+    width: 90%;
+    display: block;
+    margin-top: 8vh;
+    left: 5vw;
+  }
+  .d6_d3 div{
+    padding: 15px 30px;
+  }
+  
+  .d6_d4{
+    flex-direction: column;
+    width: 100%;
+    left: 10vw;
+  }
+  
+  .d6-d4_d1{
+    width: 80%;
+    margin: 20px 0;
+  }
+  .d6-d4_d1 img{
+    width: 90%;
+  }
 }
